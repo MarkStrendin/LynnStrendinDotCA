@@ -1,8 +1,36 @@
 html { 
-	background:blue;
+	
   background: url(img/bg.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+	font-size: 42pt;	
+}
+h2{
+
+}
+
+div.nav{
+margin-top:200px;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	//color:#37a5a1;
+	text-decoration: underline;
 }
