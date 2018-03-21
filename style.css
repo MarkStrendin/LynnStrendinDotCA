@@ -9,14 +9,22 @@ html {
 }
 
 h1{
-	font-size: 42pt;	
+	font-size: 38pt;	
 }
 h2{
 
 }
 
 div.nav{
-margin-top:200px;
+margin-top:150px;
+width: 400px;
+}
+div.nav ul li{
+	padding:4px;
+}
+
+div.nav ul li a{	
+	background-color: rgba(255, 255, 255, .7);
 }
 
 ul{
