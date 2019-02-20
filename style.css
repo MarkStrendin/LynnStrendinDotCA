@@ -1,4 +1,5 @@
 html {	
+  background: url(img/bg.png) no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -67,4 +68,14 @@ img.framed {
 	margin-top: -45px;
 	margin-left: 213px;
 	color: rgba(0,0,0,0.8);
+}
+
+.page_content_container {
+	max-width: 1000px;
+	margin-left: auto; 
+	margin-right: auto; 
+	background-color: rgba(255,255,255,0.8); 
+	padding: 50px; 
+	padding-top: 5px; 
+	border-radius: 10px;
 }
