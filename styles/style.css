@@ -35,7 +35,7 @@ h2{
 	width: 100%;	
 	border-bottom: 1px solid black;
 	border-top: 0 solid black;	
-	height: 90vh;
+	height: 90vh; /* Only do this on a computer, not on a phone */
 	background-color: white;
 }
 
@@ -101,6 +101,11 @@ h2{
 	border: 1px solid #222222;
 	position: relative;
 	box-sizing: border-box;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+	
 }
 
 .image_box_content {
