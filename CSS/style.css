@@ -1,12 +1,15 @@
 html {	
-  font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+  	font-family: 'Roboto', sans-serif;
 	padding: 0;
 	margin: 0;
 }
 
 body {
+	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	background-color: #222222;
 }
 
 h1{
@@ -21,6 +24,7 @@ h2{
 }
 
 .jumbotron {
+	box-sizing: border-box;
 	position: relative;
 	margin: 0;
 	padding: 0;
@@ -37,29 +41,34 @@ h2{
 }
 
 .jumbotron_content {
+	box-sizing: border-box;
 	padding: 15px;
 }
 
 .social_media_buttons {
+	box-sizing: border-box;
 	position: absolute;
 	bottom: 0;	
 }
 
 .social_media_button {
+	box-sizing: border-box;
 	border: 0;
-	width: 25px;
-	height: 25px;
+	width: 50px;
+	height: 50px;
 	opacity: 0.5;
 	padding: 5px;
 }
 
 .social_media_button:hover {
 	opacity: 1;
+	box-sizing: border-box;
 }
 
 .page_title {
 	font-weight: bolder;
-	font-family:  Roboto;	
+	font-family:  Roboto;
+	box-sizing: border-box;	
 }
 
 .page_title_domainname {
@@ -67,6 +76,7 @@ h2{
 	padding: 2px;
 	margin-top: -5px;
 	color: rgba(0,0,0,0.5);
+	box-sizing: border-box;
 }
 
 .link_box_container {
@@ -79,27 +89,49 @@ h2{
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	box-sizing: border-box;
 }
 
-.link_box {  
-  	place-self: center;
+
+.image_box {
+	margin: 10px;
 	width: 350px;
-	min-height: 250px;
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #222222;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.image_box_content {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	box-sizing: border-box;
+
+}
+
+.image_box_text {	
 	padding: 5px;
-	margin: 5px;
+	background-color: rgba(255,255,255,0.7);
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
 }
 
-.link_box_image {
-	width: 350px;
-	height: 200px;
-	border: 1px solid black;
-}
-
-.link_box_title {
+.image_box_hashtag {
+	font-size: 200%;
+	color: rgba(0,0,0,0.8);
 	font-weight: bold;
-	margin: 2px;
+	box-sizing: border-box;
+
 }
 
-.link_box_description {	
-	margin-left: 2px;
+.image_box_description {
+	color: rgba(0,0,0,0.7);
+	font-size: 90%;
+	box-sizing: border-box;
 }
