@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+html {	
+	box-sizing: border-box;
+  	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background-color: #444444;
+}
+
+h1{
+	font-size: 38pt;	
+	padding: 0;
+	margin: 0;
+}
+
+h2{
+	padding: 0;
+	margin: 0;
+}
+
+.jumbotron {
+	box-sizing: border-box;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-image: url("../img/bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top right;		
+	width: 100%;	
+	border-bottom: 1px solid black;
+	border-top: 0 solid black;	
+	height: 90vh; /* Only do this on a computer, not on a phone */
+	background-color: white;
+}
+
+.jumbotron_content {
+	box-sizing: border-box;	
+	padding: 15px;
+	max-width: 300px;
+	height: 100%;
+	display: flex;align-items: center;
+  	justify-content: center;
+  	background-color: rgba(255,255,255,0.5);
+}
+
+.page_title_and_address {
+	text-align: left;
+}
+
+.social_media_buttons {
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;	
+}
+
+.social_media_button {
+	box-sizing: border-box;
+	border: 0;
+	width: 50px;
+	height: 50px;
+	opacity: 0.5;
+	padding: 5px;
+}
+
+.social_media_button:hover {
+	opacity: 1;
+	box-sizing: border-box;
+}
+
+.page_title {
+	margin: 0;
+	padding: 0;
+	font-size: 4em;
+	font-weight: 900;
+	font-family:  Roboto;
+	box-sizing: border-box;	
+	border: 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.page_title_domainname {
+	font-size: 15px;
+	color: rgba(0,0,0,0.5);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+}
+
+.link_box_container {
+	padding: 15px;	
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+
+
+.image_box {
+	margin: 10px;
+	width: 350px;
+	min-width: 350px;
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #000;
+	position: relative;
+	box-sizing: border-box;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.5);
+}
+
+.image_box_content {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	box-sizing: border-box;
+
+}
+
+.image_box, .image_box_content, .image_box_text {
+	border-radius: 3px;
+}
+
+.image_box_text {	
+	padding: 5px;
+	background-color: rgba(255,255,255,0.7);
+	position: absolute;
+	bottom: 0px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.image_box_hashtag {
+	font-size: 200%;
+	color: rgba(0,0,0,0.8);
+	font-weight: bold;
+	box-sizing: border-box;
+
+}
+
+.image_box_description {
+	color: rgba(0,0,0,0.7);
+	font-size: 90%;
+	box-sizing: border-box;
+}
+
+
+/*
+ * Responsive design - what should change when the screen size gets small? 
+ */
+
+@media only screen and (max-width: 850px) {
+	.link_box_container {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.jumbotron {	
+		/*min-height: 500px;
+		max-height: 768px;*/		
+		max-height: 250px;
+		background-image: url("../img/bg_semitrans.png");
+	}
+
+
+	.jumbotron_content {
+		background: transparent;
+	}
+
+	.page_title { color: black; }
+  	.page_title_domainname  {color: black;}
+	
+}
