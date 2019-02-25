@@ -118,6 +118,7 @@ h2{
 	border: 1px solid #000;
 	position: relative;
 	box-sizing: border-box;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.5);
 }
 
 .image_box_content {
@@ -128,6 +129,10 @@ h2{
 
 }
 
+.image_box, .image_box_content, .image_box_text {
+	border-radius: 3px;
+}
+
 .image_box_text {	
 	padding: 5px;
 	background-color: rgba(255,255,255,0.7);
@@ -136,6 +141,8 @@ h2{
 	display: block;
 	width: 100%;
 	box-sizing: border-box;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
 
 .image_box_hashtag {
@@ -176,5 +183,8 @@ h2{
 	.jumbotron_content {
 		background: transparent;
 	}
+
+	.page_title { color: black; }
+  	.page_title_domainname  {color: black;}
 	
 }
