@@ -96,13 +96,12 @@ h2{
 }
 
 .link_box_container {
-	padding: 15px;
+	padding: 15px;	
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: center;
-	/* This should turn off on lower resolutions */
-	width: 90%;
+	width: 90vw;
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
@@ -112,6 +111,7 @@ h2{
 .image_box {
 	margin: 10px;
 	width: 350px;
+	min-width: 350px;
 	height: 300px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -150,4 +150,31 @@ h2{
 	color: rgba(0,0,0,0.7);
 	font-size: 90%;
 	box-sizing: border-box;
+}
+
+
+/*
+ * Responsive design - what should change when the screen size gets small? 
+ */
+
+@media only screen and (max-width: 850px) {
+	.link_box_container {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.jumbotron {	
+		/*min-height: 500px;
+		max-height: 768px;*/		
+		max-height: 250px;
+		background-image: url("../img/bg_semitrans.png");
+	}
+
+
+	.jumbotron_content {
+		background: transparent;
+	}
+	
 }
